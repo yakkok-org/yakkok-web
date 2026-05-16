@@ -11,6 +11,31 @@ export default function SharePage() {
     }
   }, [code]);
 
+  useEffect(() => {
+    const prevTitle = document.title;
+    document.title = "약꼭 앱으로 이동 중";
+
+    let robots = document.head.querySelector<HTMLMetaElement>(
+      'meta[name="robots"]'
+    );
+    const prevRobots = robots?.content ?? null;
+    if (!robots) {
+      robots = document.createElement("meta");
+      robots.name = "robots";
+      document.head.appendChild(robots);
+    }
+    robots.content = "noindex, nofollow";
+
+    return () => {
+      document.title = prevTitle;
+      if (prevRobots !== null && robots) {
+        robots.content = prevRobots;
+      } else {
+        robots?.remove();
+      }
+    };
+  }, []);
+
   return (
     <div
       style={{

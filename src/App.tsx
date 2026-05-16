@@ -1,11 +1,11 @@
 import { Route, Routes } from "react-router-dom";
-import "./App.css";
+import LandingPage from "./pages/LandingPage";
 import SharePage from "./pages/SharePage";
 
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<>약꼭</>} />
+      <Route path="/" element={<LandingPage />} />
       <Route path="/share/:code" element={<SharePage />} />
     </Routes>
   );

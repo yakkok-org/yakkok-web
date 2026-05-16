@@ -1,0 +1,16 @@
+{
+  "name": "약꼭 - 복용약 관리",
+  "short_name": "약꼭",
+  "description": "약을 잊지 마세요. 약꼭이 챙겨드릴게요.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#18c988",
+  "icons": [
+    {
+      "src": "/og-default.png",
+      "sizes": "any",
+      "type": "image/png"
+    }
+  ]
+}
