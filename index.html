@@ -23,6 +23,16 @@
     <meta name="google-site-verification" content="uOvQedqwiwRibqwoufEaW43dL5rhyMgUgOFPaCATiBA" />
     <meta name="naver-site-verification" content="94fdeed1177679e6360df83e84d713244fc81423" />
 
+    <!-- Google Analytics (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VXBVZQ8GN1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      // SPA: 자동 page_view를 끄고 라우트 변경마다 React Router에서 직접 전송한다.
+      gtag('config', 'G-VXBVZQ8GN1', { send_page_view: false });
+    </script>
+
     <!-- Preconnect / Pretendard 폰트 -->
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
     <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
