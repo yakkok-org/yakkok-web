@@ -5,13 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="manifest" href="/manifest.webmanifest" />
-    <link rel="canonical" href="https://yakkok.netlify.app/" />
 
-    <title>약꼭 - 복약 알림과 가족 공유로 매일의 약을 챙기는 앱</title>
-    <meta
-      name="description"
-      content="약꼭은 매일 정해진 시간에 복약 알림을 보내고, 가족과 함께 복약을 관리할 수 있는 무료 복약 관리 앱입니다. 영양제부터 처방약까지 캘린더로 한눈에 기록해요."
-    />
+    <!--
+      라우트별로 달라지는 메타(title, description, canonical, og:*, twitter:*)는
+      react-helmet-async를 통해 각 페이지 컴포넌트에서 주입한다.
+      여기에는 사이트 전역 정적 메타와 검색엔진 검증 토큰만 둔다.
+    -->
     <meta
       name="keywords"
       content="약꼭, 복약 관리, 복약 관리 앱, 복약 알림, 약 알리미, 약 알림 앱, 약 챙겨주는 앱, 영양제 알림, 가족 복약 관리, 약 기록 앱, 처방약 관리, 만성질환 관리"
@@ -32,32 +31,17 @@
       href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
     />
 
-    <!-- Open Graph -->
+    <!-- 공통 Open Graph / Twitter 기본값 (라우트별 가변 값은 Helmet에서 주입) -->
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="약꼭" />
     <meta property="og:locale" content="ko_KR" />
-    <meta property="og:url" content="https://yakkok.netlify.app/" />
-    <meta property="og:title" content="약꼭 - 매일의 복약을 챙겨주는 앱" />
-    <meta
-      property="og:description"
-      content="매일 정해진 시간에 복약 알림, 가족과 함께 관리하는 캘린더 기록까지. 약꼭이 챙겨드릴게요."
-    />
-    <meta property="og:image" content="https://yakkok.netlify.app/og-default.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta
       property="og:image:alt"
       content="약꼭 — 약을 잊지 마세요. 약꼭이 챙겨드릴게요."
     />
-
-    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="약꼭 - 매일의 복약을 챙겨주는 앱" />
-    <meta
-      name="twitter:description"
-      content="매일 정해진 시간에 복약 알림, 가족과 함께 관리하는 캘린더 기록까지."
-    />
-    <meta name="twitter:image" content="https://yakkok.netlify.app/og-default.png" />
   </head>
   <body>
     <div id="root"></div>

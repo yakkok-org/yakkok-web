@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import { FAQ_ITEMS } from "./faqItems";
 
 const SITE_URL = "https://yakkok.netlify.app";
 const OG_IMAGE = `${SITE_URL}/og-default.png`;
@@ -35,20 +34,7 @@ const SOFTWARE_APP = {
   },
 };
 
-const FAQ_PAGE = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: FAQ_ITEMS.map((item) => ({
-    "@type": "Question",
-    name: item.q,
-    acceptedAnswer: {
-      "@type": "Answer",
-      text: item.a,
-    },
-  })),
-};
-
-const SCHEMAS = [ORGANIZATION, SOFTWARE_APP, FAQ_PAGE];
+const SCHEMAS = [ORGANIZATION, SOFTWARE_APP];
 
 export default function StructuredData() {
   useEffect(() => {
