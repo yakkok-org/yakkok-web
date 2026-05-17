@@ -12,6 +12,10 @@ dist
 dist-ssr
 *.local
 
+# Firebase service account keys (절대 커밋 금지)
+.secrets/
+service-account*.json
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
