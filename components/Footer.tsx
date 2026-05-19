@@ -5,7 +5,15 @@ export default function Footer() {
         <span className="font-semibold text-brand">💊 약꼭</span> · 매일의 복약을
         함께 챙겨요
       </p>
-      <p className="mt-2">© 2026 약꼭 · 문의: 준비 중</p>
+      <p className="mt-2">
+        © 2026 약꼭 · 문의:{" "}
+        <a
+          href="mailto:yakkok.official@gmail.com"
+          className="text-brand-dark hover:underline"
+        >
+          yakkok.official@gmail.com
+        </a>
+      </p>
     </footer>
   );
 }

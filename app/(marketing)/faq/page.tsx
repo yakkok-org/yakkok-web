@@ -40,7 +40,14 @@ export default function FaqPage() {
           </h1>
           <p className="mt-4 text-gray-600">
             약꼭을 처음 사용하시는 분들이 가장 많이 묻는 질문을 카테고리별로
-            정리했어요. 찾으시는 답변이 없다면 고객문의로 알려주세요.
+            정리했어요. 찾으시는 답변이 없다면{" "}
+            <a
+              href="mailto:yakkok.official@gmail.com"
+              className="text-brand-dark hover:underline"
+            >
+              yakkok.official@gmail.com
+            </a>
+            으로 알려주세요.
           </p>
         </div>
         <div className="mt-12">
