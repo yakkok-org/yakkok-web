@@ -108,3 +108,65 @@ body {
   color: #111827;
   margin-bottom: 0.4em;
 }
+.prose-yakkok .tldr {
+  border: 1px solid var(--color-brand);
+  background: var(--color-brand-soft);
+  border-radius: 0.75rem;
+  padding: 1em 1.25em;
+}
+.prose-yakkok .tldr-title {
+  font-weight: 700;
+  color: var(--color-brand-dark);
+  letter-spacing: 0.02em;
+  margin-bottom: 0.4em;
+  font-size: 0.875rem;
+}
+.prose-yakkok .table-wrap {
+  margin: 0;
+  overflow-x: auto;
+  border-radius: 0.5rem;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+}
+.prose-yakkok table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+.prose-yakkok thead {
+  background: #f9fafb;
+}
+.prose-yakkok th,
+.prose-yakkok td {
+  padding: 0.65em 0.85em;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid #e5e7eb;
+}
+.prose-yakkok th {
+  font-weight: 600;
+  color: #111827;
+  white-space: nowrap;
+}
+.prose-yakkok tbody tr:last-child td {
+  border-bottom: 0;
+}
+.prose-yakkok .faq {
+  margin-top: 2.5em;
+  padding: 1.25em 1.25em 0.5em;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.75rem;
+  background: #fafafa;
+}
+.prose-yakkok .faq dt {
+  font-weight: 600;
+  color: #111827;
+  margin-top: 0.9em;
+}
+.prose-yakkok .faq dt:first-of-type {
+  margin-top: 0.2em;
+}
+.prose-yakkok .faq dd {
+  margin: 0.3em 0 0.9em;
+  color: #374151;
+}

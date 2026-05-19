@@ -1,6 +1,6 @@
-import type { FAQItem } from "@/lib/faqItems";
+type FaqLdItem = { q: string; a: string };
 
-export default function FaqLd({ items }: { items: FAQItem[] }) {
+export default function FaqLd({ items }: { items: readonly FaqLdItem[] }) {
   const schema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",

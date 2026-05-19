@@ -15,13 +15,37 @@ import DementiaChecklist, {
 import HeartwormSchedule, {
   meta as heartwormScheduleMeta,
 } from "@/content/blog/heartworm-schedule.mdx";
+import WomensEssentialSupplements, {
+  meta as womensEssentialSupplementsMeta,
+} from "@/content/blog/womens-essential-supplements.mdx";
+import SeniorFallMedications, {
+  meta as seniorFallMedicationsMeta,
+} from "@/content/blog/senior-fall-medications.mdx";
+import SleepAidGuide, {
+  meta as sleepAidGuideMeta,
+} from "@/content/blog/sleep-aid-guide.mdx";
+import EmptyStomachMedications, {
+  meta as emptyStomachMedicationsMeta,
+} from "@/content/blog/empty-stomach-medications.mdx";
+import HangoverCureTruth, {
+  meta as hangoverCureTruthMeta,
+} from "@/content/blog/hangover-cure-truth.mdx";
+import GymBeginnerSupplements, {
+  meta as gymBeginnerSupplementsMeta,
+} from "@/content/blog/gym-beginner-supplements.mdx";
 
 export type BlogCategory =
   | "family"
   | "nutrition"
   | "chronic"
   | "senior"
-  | "pet";
+  | "pet"
+  | "lifestyle";
+
+export interface BlogPostFaq {
+  q: string;
+  a: string;
+}
 
 export interface BlogPostMeta {
   slug: string;
@@ -37,6 +61,7 @@ export interface BlogPostMeta {
     alt: string;
     credit: { name: string; link: string };
   };
+  faqs?: BlogPostFaq[];
 }
 
 export interface BlogPost extends BlogPostMeta {
@@ -53,6 +78,12 @@ export const BLOG_POSTS: BlogPost[] = [
   toPost(hypertensionMissedDoseMeta, HypertensionMissedDose),
   toPost(dementiaChecklistMeta, DementiaChecklist),
   toPost(heartwormScheduleMeta, HeartwormSchedule),
+  toPost(womensEssentialSupplementsMeta, WomensEssentialSupplements),
+  toPost(seniorFallMedicationsMeta, SeniorFallMedications),
+  toPost(sleepAidGuideMeta, SleepAidGuide),
+  toPost(emptyStomachMedicationsMeta, EmptyStomachMedications),
+  toPost(hangoverCureTruthMeta, HangoverCureTruth),
+  toPost(gymBeginnerSupplementsMeta, GymBeginnerSupplements),
 ].sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
 
 export function findPostBySlug(slug: string | undefined): BlogPost | undefined {

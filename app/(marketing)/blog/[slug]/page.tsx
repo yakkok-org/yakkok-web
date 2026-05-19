@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import BlogPostLayout from "@/components/BlogPostLayout";
 import ArticleLd from "@/components/jsonld/ArticleLd";
+import FaqLd from "@/components/jsonld/FaqLd";
 import { BLOG_POSTS, findPostBySlug, postImageUrl } from "@/lib/posts";
 import { SITE_URL } from "@/lib/seo";
 
@@ -58,6 +59,7 @@ export default async function BlogPostPage({ params }: Props) {
   return (
     <>
       <ArticleLd meta={post} />
+      {post.faqs && post.faqs.length > 0 ? <FaqLd items={post.faqs} /> : null}
       <BlogPostLayout meta={post}>
         <Body />
       </BlogPostLayout>

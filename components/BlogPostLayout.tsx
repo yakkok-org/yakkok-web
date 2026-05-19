@@ -68,7 +68,25 @@ export default function BlogPostLayout({ meta, children }: Props) {
         </figcaption>
       </figure>
 
-      <div className="prose-yakkok">{children}</div>
+      <div className="prose-yakkok">
+        {children}
+        {meta.faqs && meta.faqs.length > 0 ? (
+          <section
+            aria-labelledby="faq-heading"
+            className="faq-section"
+          >
+            <h2 id="faq-heading">자주 묻는 질문</h2>
+            <dl className="faq">
+              {meta.faqs.map((faq) => (
+                <div key={faq.q}>
+                  <dt>{faq.q}</dt>
+                  <dd>{faq.a}</dd>
+                </div>
+              ))}
+            </dl>
+          </section>
+        ) : null}
+      </div>
 
       <aside className="mt-16 rounded-card bg-brand/5 border border-brand/20 p-6 md:p-8">
         <p className="text-brand font-semibold text-sm">약꼭이 도와드려요</p>
