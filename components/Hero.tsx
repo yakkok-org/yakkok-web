@@ -17,13 +17,14 @@ export default function Hero() {
             영양제부터 처방약까지, 가족과 함께 한 곳에서 똑똑하게 챙기세요.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
-            <button
-              type="button"
-              disabled
-              className="rounded-full bg-brand text-white px-6 py-3 font-semibold shadow-sm opacity-90 cursor-not-allowed"
+            <a
+              href="https://apps.apple.com/kr/app/id6752120136"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full bg-brand text-white px-6 py-3 font-semibold shadow-sm hover:bg-brand-dark transition"
             >
-              사전 알림 신청 (준비 중)
-            </button>
+              App Store에서 받기
+            </a>
             <a
               href="#features"
               className="rounded-full border border-gray-300 px-6 py-3 font-semibold text-gray-700 hover:border-brand hover:text-brand transition"

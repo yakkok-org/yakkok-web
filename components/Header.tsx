@@ -23,13 +23,14 @@ export default function Header() {
           >
             FAQ
           </Link>
-          <button
-            type="button"
-            disabled
-            className="rounded-full border border-gray-200 px-4 py-2 text-sm text-gray-500 cursor-not-allowed"
+          <a
+            href="https://apps.apple.com/kr/app/id6752120136"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-full bg-brand text-white px-4 py-2 text-sm font-medium hover:bg-brand-dark transition-colors"
           >
-            다운로드 (출시 예정)
-          </button>
+            App Store
+          </a>
         </nav>
       </div>
     </header>

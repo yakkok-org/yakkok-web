@@ -76,16 +76,18 @@ export default function BlogPostLayout({ meta, children }: Props) {
           매일 챙겨야 하는 약, 약꼭이 함께 챙겨드릴게요
         </h2>
         <p className="mt-3 text-gray-600 leading-relaxed">
-          복약 알림, 가족 공유, 캘린더 기록까지. 약꼭은 곧 출시될 예정입니다.
-          출시 알림을 신청하시면 가장 먼저 소식을 받아보실 수 있어요.
+          복약 알림, 가족 공유, 캘린더 기록까지. App Store에서 약꼭을 받아
+          매일의 복약을 안전하게 챙겨보세요.
         </p>
         <div className="mt-6 flex flex-wrap gap-3">
-          <Link
-            href="/"
+          <a
+            href="https://apps.apple.com/kr/app/id6752120136"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center justify-center rounded-full bg-brand text-white font-semibold px-5 py-2.5 hover:bg-brand-dark transition-colors"
           >
-            약꼭 소개 보기
-          </Link>
+            App Store에서 받기
+          </a>
           <Link
             href="/faq"
             className="inline-flex items-center justify-center rounded-full border border-gray-200 text-gray-700 font-semibold px-5 py-2.5 hover:border-brand hover:text-brand transition-colors"

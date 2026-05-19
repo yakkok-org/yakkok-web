@@ -61,7 +61,7 @@ export const FAQ_ITEMS: FAQItem[] = [
   },
   {
     q: "약꼭은 언제 출시되나요?",
-    a: "약꼭은 곧 출시될 예정입니다. 출시 알림 신청을 통해 가장 먼저 소식을 받아보실 수 있어요.",
+    a: "약꼭 iOS 앱은 App Store에서 다운로드할 수 있어요. Android 버전은 출시 준비 중입니다.",
     category: "launch",
     featured: true,
   },
