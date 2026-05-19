@@ -4,10 +4,11 @@ export default function Hero() {
       <div className="grid md:grid-cols-2 gap-12 items-center">
         <div>
           <p className="inline-flex items-center gap-2 rounded-full bg-brand-soft text-brand-dark px-3 py-1 text-sm font-medium">
-            <span aria-hidden>🙌</span> 가족과 함께 챙기는 복약 습관
+            <span aria-hidden>🙌</span>함께 챙기는 복약 습관
           </p>
           <h1 className="mt-5 text-4xl md:text-6xl font-bold tracking-tight leading-tight">
-            약을 잊지 마세요.
+            영양제, <br />
+            더이상 잊지 마세요.
             <br />
             <span className="text-brand">약꼭</span>이 챙겨드릴게요.
           </h1>
@@ -42,12 +43,8 @@ export default function Hero() {
               </div>
               <div className="flex-1">
                 <p className="text-xs text-gray-500">오전 8:30</p>
-                <p className="mt-1 font-semibold">
-                  지금 복용할 시간이에요!
-                </p>
-                <p className="text-sm text-gray-600 mt-1">
-                  비타민 D · 오메가3
-                </p>
+                <p className="mt-1 font-semibold">지금 복용할 시간이에요!</p>
+                <p className="text-sm text-gray-600 mt-1">비타민 D · 오메가3</p>
                 <div className="mt-3 flex gap-2 text-xs">
                   <span className="rounded-full bg-brand text-white px-3 py-1 font-medium">
                     복용했어요

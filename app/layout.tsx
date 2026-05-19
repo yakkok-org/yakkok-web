@@ -1,10 +1,11 @@
+import Analytics from "@/components/Analytics";
 import type { Metadata, Viewport } from "next";
 import Script from "next/script";
 import { Suspense } from "react";
-import Analytics from "@/components/Analytics";
 import "./globals.css";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://yakkok.netlify.app";
+const SITE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://yakkok.netlify.app";
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID ?? "G-VXBVZQ8GN1";
 
 export const metadata: Metadata = {
@@ -46,7 +47,7 @@ export const metadata: Metadata = {
         url: "/og-default.png",
         width: 1200,
         height: 630,
-        alt: "약꼭 — 약을 잊지 마세요. 약꼭이 챙겨드릴게요.",
+        alt: "약꼭 — 영양제, 더이상 잊지 마세요. 약꼭이 챙겨드릴게요.",
       },
     ],
   },
@@ -73,11 +74,7 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <head>
-        <link
-          rel="preconnect"
-          href="https://cdn.jsdelivr.net"
-          crossOrigin=""
-        />
+        <link rel="preconnect" href="https://cdn.jsdelivr.net" crossOrigin="" />
         <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
         <link
           rel="stylesheet"
