@@ -1,9 +1,9 @@
-import type { Metadata } from "next";
+import CTA from "@/components/CTA";
 import FAQList from "@/components/FAQList";
 import FaqLd from "@/components/jsonld/FaqLd";
-import CTA from "@/components/CTA";
 import { FAQ_ITEMS } from "@/lib/faqItems";
 import { SITE_URL } from "@/lib/seo";
+import type { Metadata } from "next";
 
 const TITLE = "자주 묻는 질문 (FAQ) | 약꼭";
 const DESCRIPTION =
@@ -19,7 +19,11 @@ export const metadata: Metadata = {
     title: TITLE,
     description: DESCRIPTION,
   },
-  twitter: { card: "summary_large_image", title: TITLE, description: DESCRIPTION },
+  twitter: {
+    card: "summary_large_image",
+    title: TITLE,
+    description: DESCRIPTION,
+  },
 };
 
 export default function FaqPage() {
@@ -39,15 +43,8 @@ export default function FaqPage() {
             자주 묻는 질문
           </h1>
           <p className="mt-4 text-gray-600">
-            약꼭을 처음 사용하시는 분들이 가장 많이 묻는 질문을 카테고리별로
-            정리했어요. 찾으시는 답변이 없다면{" "}
-            <a
-              href="mailto:yakkok.official@gmail.com"
-              className="text-brand-dark hover:underline"
-            >
-              yakkok.official@gmail.com
-            </a>
-            으로 알려주세요.
+            약꼭을 처음 사용하시는 분들이 많이 묻는 질문을 카테고리별로
+            정리했어요.
           </p>
         </div>
         <div className="mt-12">
