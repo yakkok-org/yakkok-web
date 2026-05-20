@@ -1,4 +1,5 @@
 import Link from "next/link";
+import AppStoreLink from "@/components/AppStoreLink";
 
 export default function Header() {
   return (
@@ -23,14 +24,12 @@ export default function Header() {
           >
             FAQ
           </Link>
-          <a
-            href="https://apps.apple.com/kr/app/id6752120136"
-            target="_blank"
-            rel="noopener noreferrer"
+          <AppStoreLink
+            location="header_nav"
             className="rounded-full bg-brand text-white px-4 py-2 text-sm font-medium hover:bg-brand-dark transition-colors"
           >
             App Store
-          </a>
+          </AppStoreLink>
         </nav>
       </div>
     </header>

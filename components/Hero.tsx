@@ -1,3 +1,5 @@
+import AppStoreLink from "@/components/AppStoreLink";
+
 export default function Hero() {
   return (
     <section className="max-w-6xl mx-auto px-6 py-20 md:py-28">
@@ -18,14 +20,12 @@ export default function Hero() {
             영양제부터 처방약까지, 가족과 함께 한 곳에서 똑똑하게 챙기세요.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
-            <a
-              href="https://apps.apple.com/kr/app/id6752120136"
-              target="_blank"
-              rel="noopener noreferrer"
+            <AppStoreLink
+              location="hero_main"
               className="rounded-full bg-brand text-white px-6 py-3 font-semibold shadow-sm hover:bg-brand-dark transition"
             >
               App Store에서 받기
-            </a>
+            </AppStoreLink>
             <a
               href="#features"
               className="rounded-full border border-gray-300 px-6 py-3 font-semibold text-gray-700 hover:border-brand hover:text-brand transition"
